@@ -295,3 +295,19 @@ document.addEventListener('DOMContentLoaded', function() {
     animateOnScroll();
   }, 500);
 });
+// تعطيل كلك يمين
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
+
+// تعطيل اختصارات Inspect Element
+document.addEventListener('keydown', function(event) {
+  if (
+      event.key === "F12" || 
+      (event.ctrlKey && event.shiftKey && event.key === "I") || 
+      (event.ctrlKey && event.shiftKey && event.key === "J") || 
+      (event.ctrlKey && event.key === "U")
+  ) {
+      event.preventDefault();
+  }
+});
