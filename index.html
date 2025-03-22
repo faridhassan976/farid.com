@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <meta name="google-site-verification" content="lsP_HIvqDBwNI8dTv1rnVexNI7hYoKYoDZX49LZs98I" />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+    });
+});
+
+  </script>
 </head>
 <body>
  
@@ -19,6 +30,7 @@
     <header>
       <div class="container">
         <div class="logo">فريد</div>
+        <button class="menu-toggle">☰</button> <!-- زر الهامبرجر -->
         <nav>
           <ul>
             <li><a href="#home" class="active">الرئيسية</a></li>
@@ -38,10 +50,10 @@
       <div class="container">
         <div class="home-content">
           <div class="home-text">
-            <h1>مرحبًا,  <span>.فريد </span></h1>
+            <h1>مرحبًا, انا  <span>فريد .</span></h1>
             <p>مطور مواقع ويب وشغوف بتطوير المواقع. أسعى دائمًا لابتكار تصاميم جذابة وأفكار إبداعية لتحويل الأفكار إلى واقع.</p>
             <div class="home-buttons">
-              <a href="#contact" class="btn primary-btn">تواصل معي</a>
+              <a href="contact.html" class="btn primary-btn">تواصل معي</a>
               <a href="#about" class="btn secondary-btn">معرفة المزيد</a>
             </div>
           </div>
@@ -71,7 +83,7 @@
             <h3>فريد - مطور ويب متخصص في إنشاء تجارب رقمية متميزة</h3>
             <p>أنا مطور ويب مع خبرة سنتين في إنشاء مواقع ويب وتطبيقات ويب مبتكرة. أتخصص في تطوير واجهات المستخدم الجذابة والتفاعلية، وتحسين تجربة المستخدم، وإنشاء حلول برمجية فعالة.</p>
             <p>أتقن العديد من لغات البرمجة وأطر العمل الحديثة، بما في ذلك HTML، CSS، JavaScript، وReact. أؤمن بأهمية التعلم المستمر وتجربة التقنيات الجديدة، مما يساعدني على البقاء في طليعة المطورين في هذا المجال سريع التطور.</p>
-            <a href="#contact" class="btn primary-btn">تواصل معي</a>
+            <a href="contact.html" class="btn primary-btn">تواصل معي</a>
           </div>
           <div class="about-info">
             <div class="welcome-card">
